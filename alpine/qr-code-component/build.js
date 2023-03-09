@@ -1,10 +1,5 @@
-import * as fs from "fs";
-import glob from "glob";
+const fs = require('fs');
+const fsextra = require('fs-extra');
 
 fs.copyFileSync("index.html", "../../gh-pages/alpine/qr-code-component/index.html");
-
-glob("assets/*", (err, matches) => {
-    matches.forEach((val) => {
-        fs.copyFileSync("assets/" + val, "../../gh-pages/alpine/qr-code-component/assets/" + val);
-    });
-});
+fsextra.copy('assets', "../../gh-pages/alpine/qr-code-component/assets");

@@ -7,12 +7,10 @@
     "postcss-media-minmax": "^5.0.0",
     "postcss-nested": "^6.0.1",
     "postcss-scss": "^4.0.6",
-    "prettier": "2.8.4",
-    "glob": "^9.2.1"
+    "prettier": "2.8.4"
   },
-  "type": "module",
   "scripts": {
     "dev:start": "postcss src --o assets/styles.css --watch",
-    "build": "node build.js"
+    "build": "postcss src --o assets/styles.css && node build.js"
   }
 }
