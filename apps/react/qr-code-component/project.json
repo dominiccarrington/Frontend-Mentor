@@ -9,7 +9,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/react/qr-code-component"
+        "outputPath": "dist/react/qr-code-component",
+        "base": "https://dominiccarrington.github.io/Frontend-Mentor/react/qr-code-component/"
       },
       "configurations": {
         "development": {
